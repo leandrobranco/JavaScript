@@ -16,7 +16,7 @@ function comprar(){
     img.innerHTML=""
     btn.innerHTML=""
     // mudar imagem 8 pedaços 
-    pizza.setAttribute('src','../../img/8.jpg')
+    pizza.setAttribute('src','8.jpg')
     img.appendChild(pizza)
 
     // colocar outro botão comar pizza
@@ -29,7 +29,7 @@ function comer(n){
     
        if(n >0){
             --n
-            pizza.setAttribute('src',`../../img/${n}.jpg`)
+            pizza.setAttribute('src',`${n}.jpg`)
         
             comerPizza.setAttribute('onclick', `comer(${n})`)
             btn.innerHTML=""
