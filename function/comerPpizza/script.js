@@ -30,12 +30,11 @@ function comer(n){
        if(n >0){
             --n
             pizza.setAttribute('src',`${n}.jpg`)
-        
             comerPizza.setAttribute('onclick', `comer(${n})`)
             btn.innerHTML=""
-            btn.appendChild(comparPizza)
             btn.appendChild(comerPizza)
-            if(n==0){
+           )
+                if(n == 0 || n <= 7 ){
                 btn.innerHTML=""
                 btn.appendChild(comparPizza)
                 }
