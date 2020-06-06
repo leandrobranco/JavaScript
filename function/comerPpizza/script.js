@@ -21,8 +21,7 @@ function comprar(){
 
     // colocar outro botão comar pizza
     comerPizza.setAttribute('onclick', 'comer(8)')
-    
-    btn.appendChild(comparPizza)
+   
     btn.appendChild(comerPizza)
 }
 function comer(n){
@@ -33,10 +32,11 @@ function comer(n){
             comerPizza.setAttribute('onclick', `comer(${n})`)
             btn.innerHTML=""
             btn.appendChild(comerPizza)
+            btn.appendChild(compar Pizza)
            )
-                if(n == 0 || n <= 7 ){
+                if(n == 0 ){
                 btn.innerHTML=""
-                btn.appendChild(comparPizza)
+                btn.appendChild(compar Pizza)
                 }
         }
        else  {           
