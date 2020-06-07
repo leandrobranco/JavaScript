@@ -16,25 +16,26 @@ function comprar(){
     img.innerHTML=""
     btn.innerHTML=""
     // mudar imagem 8 pedaços 
-    pizza.setAttribute('src','8.jpg')
+    pizza.setAttribute('src','../img/8.jpg')
     img.appendChild(pizza)
 
     // colocar outro botão comar pizza
     comerPizza.setAttribute('onclick', 'comer(8)')
-   
+    
+  //  btn.appendChild(comparPizza)
     btn.appendChild(comerPizza)
 }
 function comer(n){
     
        if(n >0){
             --n
-            pizza.setAttribute('src',`${n}.jpg`)
+            pizza.setAttribute('src',`../img/${n}.jpg`)
+        
             comerPizza.setAttribute('onclick', `comer(${n})`)
             btn.innerHTML=""
-            btn.appendChild(comerPizza)
             btn.appendChild(comparPizza)
-           )
-                if(n == 0 ){
+            btn.appendChild(comerPizza)
+            if(n==0){
                 btn.innerHTML=""
                 btn.appendChild(comparPizza)
                 }
@@ -43,5 +44,5 @@ function comer(n){
             btn.innerHTML=""
             btn.appendChild(comparPizza)
             }
-          return  n
-}   
+          return n
+} 
