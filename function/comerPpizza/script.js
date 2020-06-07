@@ -32,11 +32,11 @@ function comer(n){
             comerPizza.setAttribute('onclick', `comer(${n})`)
             btn.innerHTML=""
             btn.appendChild(comerPizza)
-            btn.appendChild(compar Pizza)
+            btn.appendChild(comparPizza)
            )
                 if(n == 0 ){
                 btn.innerHTML=""
-                btn.appendChild(compar Pizza)
+                btn.appendChild(comparPizza)
                 }
         }
        else  {           
